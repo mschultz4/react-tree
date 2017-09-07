@@ -1,4 +1,24 @@
 import React from "react";
 import { render } from "react-dom";
 
-render(<div>react working</div>, document.getElementById("root"));
+import Tree from "../lib/Tree.js";
+
+const data = {
+  header: ["the stuff", "below"],
+  another: ["I can't", "see through", { ThirdLevel: ["hello", "again"] }],
+  again: "here no array"
+};
+
+render(
+  <div>
+  <pre>
+{`{
+  header: ["the stuff", "below"],
+  another: ["I can't", "see through", { ThirdLevel: ["hello", "again"] }],
+  again: "here no array"
+}`}
+  </pre>
+    <Tree data={data} />
+  </div>,
+  document.getElementById("root")
+);

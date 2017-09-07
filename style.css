@@ -1,0 +1,28 @@
+.tree {
+  overflow-y: hidden;
+}
+
+.tree-children {
+  margin-left: 16px;
+}
+
+.tree-collapsed {
+  display: none;
+}
+
+.arrow {
+  cursor: pointer;
+  margin-right: 5px;
+  display: inline-block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.arrow-collapsed {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
